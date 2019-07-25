@@ -10,8 +10,8 @@
     }
     //-------------------------------------------------------------------------------------
     var modules={
-        "recruitment-data":    	        {url:"$H/elig-questions-data.html",Table:"dev-cansleep-recruitment-record",form_module:"recruitment-form",router:1},
-        "recruitment-form":    	        {url:"$H/elig-questions-form.html",Table:"dev-cansleep-recruitment-record"},
+        "recruitment-data":    	        {url:"$H/elig-questions-data.html",Table:"cansleep-recruitment-record",form_module:"recruitment-form",router:1},
+        "recruitment-form":    	        {url:"$H/elig-questions-form.html",Table:"cansleep-recruitment-record"},
     }
     url_replace(modules,"","$H","https://wappsystem.github.io/cansleep/modules","http://127.0.0.1:8000/wappsystem/cansleep/modules");
     //-------------------------------------------------------------------------------------
