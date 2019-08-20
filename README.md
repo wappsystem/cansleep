@@ -1,4 +1,4 @@
 # cansleep
 
-Production:    http://www.cansleepstudy.com  
-Demonstration: http://www.cansleepstudy.com?tb=demo  
+Production:    https://www.cansleepstudy.com  
+Demonstration: https://www.cansleepstudy.com?tb=demo  
