@@ -23,8 +23,8 @@
 			related medical evaluations from a doctor.<br><br>
 			Your participation in this study is voluntary.<br><br>
 			<div class="FAQ">
-				<a href="#hide1" class="hide" id="hide1">+ Impact of COVID-19: Frequent Asked Questions</a>
-				<a href="#show1" class="show" id="show1">- Impact of COVID-19: Frequent Asked Questions</a>
+				<a class="hide" id="hide1__ID">+ Impact of COVID-19: Frequent Asked Questions</a>
+				<a class="show" id="show1__ID">- Impact of COVID-19: Frequent Asked Questions</a>
 				<div class="list">
 					<p style=font-weight:bold>Is the study still running?</p>
 					<p>Yes. All research visits requiring face-to-face contact have been suspended until further notice. However, <u>eligibility screening will continue for all new participants remotely (online and via telephone).</u></p>
@@ -58,6 +58,8 @@
 			if (m.prefix == undefined) m.prefix = "";
 			$('#yes__ID').on('click', function () { $vm.load_module(m.prefix + 'recruitment-form', '', {}); })
 			$('#no__ID').on('click', function () { $vm.alert("Completing questionnaires is necessary to be part of the study.") })
+			$('#hide1__ID').on('click', function () {$('#show1__ID').show();$('#hide1__ID').hide();$('.list').show();  })
+			$('#show1__ID').on('click', function () { $('#show1__ID').hide();$('#hide1__ID').show();$('.list').hide();})
 
 		}
 		$vm.home_ready = 1;
@@ -81,20 +83,9 @@
 			display: none;
 		}
 
-		#D__ID .hide:target+.show {
-			display: inline;
-		}
-
-		#D__ID .hide:target {
-			display: none;
-		}
-
-		#D__ID .hide:target~.list {
-			display: inline;
-		}
-
 		/*style the (+) and (-) */
 		#D__ID .hide,#D__ID .show {
+			cursor: pointer;
 			font-size: 16px;
 			font-weight: bold;
 			color: #fff;
